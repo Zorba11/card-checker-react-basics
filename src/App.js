@@ -12,6 +12,9 @@ this.state = {
   monsters: [],
   searchField: ''
 };
+// .bind() - is a method that on any function that returns a new function where the context of this is passed as an argument.
+// this.handleChange = this.handleChange.bind(this);
+
 
   }
 
@@ -21,8 +24,8 @@ this.state = {
       .then(users => this.setState({monsters: users}));
   }
 
-  handleChange(e) {
-    e => this.setState({searchField: e.target.value});
+  handleChange = (e) => {
+    this.setState({searchField: e.target.value});
   }
 
   render() {
@@ -32,7 +35,7 @@ this.state = {
       <div className="App">
       <SearchBox 
         placeholder='search monsters' 
-        handleChange={this.handleChange(e)}
+        handleChange={this.handleChange}
       />
       <CardList monsters={filteredMonsters}/>
       </div>
