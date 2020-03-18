@@ -22,3 +22,10 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+h1 {
+  font-family: 'Gloria Hallelujah';
+  font-size: 72px;
+  color: purple;
+  
+}
