@@ -2,7 +2,7 @@
   "name": "card-checker",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://zorba11.github.io/card-checker-react-basics",
+  "homepage": "https://Zorba11.github.io/card-checker-react-basics",
   "dependencies": {
     "gh-pages": "^2.2.0",
     "react": "^16.13.0",
